@@ -49,7 +49,6 @@ public class Class1289 {
         int size = arr[0].length;
 
 
-
         for (int i = 0; i < arr.length; i++) {
             int[] nums = new int[num];
             int sum = 0;
