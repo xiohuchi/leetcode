@@ -20,10 +20,6 @@ public class ConcreteMediator extends Mediator {
     }
 
     public void relay(Colleague cl) {
-        for (Colleague ob : colleagues) {
-            if (!ob.equals(cl)) {
-                ((Colleague) ob).receive();
-            }
-        }
+        colleagues.stream().filter(ob -> !ob.equals(cl)).forEachOrdered(Colleague::receive);
     }
 }
