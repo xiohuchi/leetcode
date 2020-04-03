@@ -1,7 +1,9 @@
 package com.example.designpattern.factory.gcff;
 
 /**
- * Created by jingbin on 2016/10/24.
+ *
+ * @author jingbin
+ * @date 2016/10/24
  * <p>
  * 在北京和西安 开分店:
  * 工厂方法模式:
