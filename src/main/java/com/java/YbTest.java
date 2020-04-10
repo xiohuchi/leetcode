@@ -1,7 +1,7 @@
 package com.java;
 
-import java.text.DateFormat;
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author YangBin
@@ -9,10 +9,14 @@ import java.util.Date;
  */
 public class YbTest {
 
-    public static void main(String[] args) {
-        System.out.println(DateFormat.getTimeInstance(DateFormat.FULL).format(new Date()));
-        System.out.println(DateFormat.getTimeInstance(DateFormat.MEDIUM).format(new Date()));
-        System.out.println(DateFormat.getTimeInstance(DateFormat.DATE_FIELD).format(new Date()));
-        System.out.println(DateFormat.getTimeInstance(DateFormat.FULL).format(new Date()));
+    public static void main(String[] args) throws InterruptedException {
+        Thread.sleep(10 * 1000);
+        String[] array = new String[Integer.MAX_VALUE];
+        List<String[]> list = new ArrayList<>();
+        while (true) {
+            System.out.println("添加数组");
+            Thread.sleep(1000);
+            list.add(array);
+        }
     }
 }
